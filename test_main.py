@@ -1,8 +1,8 @@
 from main import przetworz_wejscie
 
 def test_przetworz_wejscie_standard_input():
-    wejscie = "   ,,,WITAJ, ŚWIECIE!!! To jest przykładowy TEKST, który będzie OBRABIANy,,,   "
-    expected_lista = ['witaj', 'świecie!!!', 'to', 'jest', 'przykładowy', 'tekst', 'który', 'będzie', 'obrabiany']
+    wejscie = "   ,,,WITAJ, SWIECIE!!! To jest przykladowy TEKST, ktory bedzie OBRABIANy,,,   "
+    expected_lista = ['witaj', 'swiecie!!!', 'to', 'jest', 'przykladowy', 'tekst', 'ktory', 'bedzie', 'obrabiany']
     expected_liczba = 9
     wynik_lista, wynik_liczba = przetworz_wejscie(wejscie)
     assert wynik_lista == expected_lista
