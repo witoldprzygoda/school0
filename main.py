@@ -1,5 +1,9 @@
 def przetworz_wejscie(wejscie):
-    pass
+    wejscie = wejscie.strip().replace(",,", ",")
+    lista_slow = wejscie.split(",")
+    lista_slow = [slowo.strip().lower() for slowo in lista_slow if slowo.strip()]
+    return lista_slow, len(lista_slow)
+
 
 def main():
     wejscie = input("Podaj kilka slow oddzielonych przecinkami: ")
