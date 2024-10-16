@@ -1,8 +1,5 @@
 def przetworz_wejscie(wejscie):
-    wejscie = wejscie.strip().replace(",,", ",")
-    lista_slow = wejscie.split(",")
-    lista_slow = [slowo.strip().lower() for slowo in lista_slow if slowo.strip()]
-    return lista_slow, len(lista_slow)
+    pass
 
 
 def main():
